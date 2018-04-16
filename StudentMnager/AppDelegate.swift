@@ -13,8 +13,12 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    static var shared = {
+        return UIApplication.shared.delegate as! AppDelegate
+    }()
 
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
@@ -41,12 +45,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.
-        self.saveContext()
+        AppDelegate.saveContext()
     }
 
     // MARK: - Core Data stack
-
-    lazy var persistentContainer: NSPersistentContainer = {
+    static var context = {
+        return persistentContainer.viewContext
+    }()
+    
+    static var persistentContainer: NSPersistentContainer = {
         /*
          The persistent container for the application. This implementation
          creates and returns a container, having loaded the store for the
@@ -75,7 +82,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // MARK: - Core Data Saving support
 
-    func saveContext () {
+    static func saveContext () {
         let context = persistentContainer.viewContext
         if context.hasChanges {
             do {

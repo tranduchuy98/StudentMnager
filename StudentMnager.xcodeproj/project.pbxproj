@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		E59ECDD8207CA5A100EC0872 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59ECDD7207CA5A100EC0872 /* AppDelegate.swift */; };
-		E59ECDDA207CA5A100EC0872 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59ECDD9207CA5A100EC0872 /* ViewController.swift */; };
+		E59ECDDA207CA5A100EC0872 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59ECDD9207CA5A100EC0872 /* DetailVC.swift */; };
 		E59ECDDD207CA5A100EC0872 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E59ECDDB207CA5A100EC0872 /* Main.storyboard */; };
 		E59ECDE0207CA5A100EC0872 /* StudentMnager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E59ECDDE207CA5A100EC0872 /* StudentMnager.xcdatamodeld */; };
 		E59ECDE2207CA5A100EC0872 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E59ECDE1207CA5A100EC0872 /* Assets.xcassets */; };
 		E59ECDE5207CA5A100EC0872 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E59ECDE3207CA5A100EC0872 /* LaunchScreen.storyboard */; };
+		E59ECDED207CA61E00EC0872 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59ECDEC207CA61E00EC0872 /* CollectionViewCell.swift */; };
+		E59ECDEF207CA63100EC0872 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59ECDEE207CA63100EC0872 /* CollectionViewController.swift */; };
+		E59ECDF1207CA7C500EC0872 /* Datasevicer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59ECDF0207CA7C500EC0872 /* Datasevicer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E59ECDD4207CA5A100EC0872 /* StudentMnager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudentMnager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E59ECDD7207CA5A100EC0872 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E59ECDD9207CA5A100EC0872 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E59ECDD9207CA5A100EC0872 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		E59ECDDC207CA5A100EC0872 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E59ECDDF207CA5A100EC0872 /* StudentMnager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StudentMnager.xcdatamodel; sourceTree = "<group>"; };
 		E59ECDE1207CA5A100EC0872 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E59ECDE4207CA5A100EC0872 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E59ECDE6207CA5A100EC0872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E59ECDEC207CA61E00EC0872 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		E59ECDEE207CA63100EC0872 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		E59ECDF0207CA7C500EC0872 /* Datasevicer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datasevicer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,10 +63,13 @@
 			isa = PBXGroup;
 			children = (
 				E59ECDD7207CA5A100EC0872 /* AppDelegate.swift */,
-				E59ECDD9207CA5A100EC0872 /* ViewController.swift */,
 				E59ECDDB207CA5A100EC0872 /* Main.storyboard */,
 				E59ECDE1207CA5A100EC0872 /* Assets.xcassets */,
 				E59ECDE3207CA5A100EC0872 /* LaunchScreen.storyboard */,
+				E59ECDD9207CA5A100EC0872 /* DetailVC.swift */,
+				E59ECDEC207CA61E00EC0872 /* CollectionViewCell.swift */,
+				E59ECDEE207CA63100EC0872 /* CollectionViewController.swift */,
+				E59ECDF0207CA7C500EC0872 /* Datasevicer.swift */,
 				E59ECDE6207CA5A100EC0872 /* Info.plist */,
 				E59ECDDE207CA5A100EC0872 /* StudentMnager.xcdatamodeld */,
 			);
@@ -139,9 +148,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E59ECDDA207CA5A100EC0872 /* ViewController.swift in Sources */,
+				E59ECDDA207CA5A100EC0872 /* DetailVC.swift in Sources */,
+				E59ECDF1207CA7C500EC0872 /* Datasevicer.swift in Sources */,
 				E59ECDD8207CA5A100EC0872 /* AppDelegate.swift in Sources */,
+				E59ECDED207CA61E00EC0872 /* CollectionViewCell.swift in Sources */,
 				E59ECDE0207CA5A100EC0872 /* StudentMnager.xcdatamodeld in Sources */,
+				E59ECDEF207CA63100EC0872 /* CollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +291,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KP2PUCP22W;
 				INFOPLIST_FILE = StudentMnager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = huy.StudentMnager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -293,7 +307,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KP2PUCP22W;
 				INFOPLIST_FILE = StudentMnager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = huy.StudentMnager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
